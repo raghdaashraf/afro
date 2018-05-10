@@ -1,0 +1,64 @@
+* 									{ margin: 0; padding: 0; }
+body								{   font-family:Arial, Helvetica, sans-serif; font-size:14px;:none; color:#FFF; } 
+#page-wrap							{ width: 1000px; margin:0px ; } 
+a									{ text-decoration: none; }
+ul									{ list-style: none; }
+ 
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; z-index:10; text-decoration:none; color:#FFF; }
+ul.dropdown li                      { font-weight: normal; float: left; zoom: 1; background:Transparent;  text-decoration:none; color:#FFF;}
+ul.dropdown a:hover		            { color:fff; text-decoration:none }
+ul.dropdown a:active               { color:#FFF; text-decoration:none }
+ul.dropdown li a                    { display: block; padding: 9px 10px; font-family:Arial, Helvetica, sans-serif;
+                                    font-size:13px ;color:#29841c;  text-transform:uppercase;font-family:Arial, Helvetica, sans-serif; font-weight:bold; }
+ul.dropdown li:last-child a         { border-right: none;  } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background-image:url(../images/menu_bg_hover.png);
+background-position:center 26px; background-repeat:no-repeat; color: #ffffff; position: relative;}
+ul.dropdown li.hover a              {  text-decoration:none;}
+
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul  { width: 200px; visibility: hidden; position: absolute; top: 100%; left: 0; border-radius:8px 8px 0px 0px; padding:0px;}
+ul.dropdown ul li 	 { font-weight: normal; background:rgb(41, 132, 28);color:#000;float: none; border-bottom:none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a	{ 
+background-image: none;
+    border-bottom: 1px dotted rgb(204, 204, 204);
+    border-right: medium none;
+     display: inline-block;
+    font-family: arial;
+    font-size: 11px;
+    margin: 0;
+    padding:  5px;
+    text-transform: capitalize;
+    width: 190px;
+	color:#fff;
+	font-weight:normal;}
+	 
+ul.dropdown ul li a:hover { border-right: none; width:190px; background-color:#fbbb0d; padding: 5px; border-bottom: 1px dotted  #ccc; margin:0px ; background-image:none; color:#fff;font-weight:normal;} 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0;  background-image:none; padding:0px;}
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+
+
+
+.fasel_c{
+	width:2px ;
+	height:40px;
+	float:left;
+	margin:0px 18px ;
+	background-image:url(../images/fasel.png);
+	background-repeat:no-repeat;
+	background-position:center 3px;
+	}
